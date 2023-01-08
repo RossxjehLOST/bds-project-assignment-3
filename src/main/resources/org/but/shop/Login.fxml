@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="fpga" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.but.shop.controllers.LoginController">
+	<children>
+		<HBox>
+			<VBox.margin>
+				<Insets top="10.0" />
+			</VBox.margin>
+         <effect>
+            <ColorInput paint="#00b2ff" />
+         </effect>
+		</HBox>
+      <Pane prefHeight="363.0" prefWidth="600.0">
+         <children>
+             <Label layoutX="140.0" layoutY="40.0" prefHeight="157.0" prefWidth="384.0" text="Welcome to our shop" textAlignment="CENTER" textFill="#100e0ef5" wrapText="true">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+            <Label fx:id="usernameLabel" layoutX="100.0" layoutY="256.0" prefHeight="17.0" prefWidth="104.0" text="User email:" />
+            <TextField id="usernameTextField" fx:id="usernameTextField" layoutX="211.0" layoutY="252.0" promptText="abdc@email.com" />
+            <Label fx:id="passwordLabel" layoutX="100.0" layoutY="303.0" prefHeight="19.0" prefWidth="104.0" text="Password:" />
+            <PasswordField id="passwordTextField" fx:id="passwordTextField" layoutX="211.0" layoutY="301.0" promptText="*******" />
+            <Button id="signInButton" fx:id="signInButton" layoutX="382.0" layoutY="259.0" mnemonicParsing="false" onAction="#signInActionHandler" prefHeight="61.0" prefWidth="134.0" text="Sign in" />
+            <Label layoutX="100.0" layoutY="219.0" prefHeight="8.0" prefWidth="167.0" text="PC parts database">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.019999999552965164" green="0.7423275709152222" blue="1.0" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Pane>
+	</children>
+</VBox>

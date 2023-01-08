@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox minHeight="625.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@mainTheme.css" >
+    <children>
+        <TableView fx:id="systemPersonsTableView" layoutX="-1.0" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="personsId" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="name" prefWidth="75.0" text="Name" />
+                <TableColumn fx:id="surname" prefWidth="147.0" text="Surname" />
+                <TableColumn fx:id="email" prefWidth="134.0" text="Email" />
+            </columns>
+        </TableView>
+    </children>
+</VBox>

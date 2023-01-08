@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox minHeight="478.0" prefHeight="478.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+              <TextField fx:id="inputField" layoutX="14.0" layoutY="42.0" prefHeight="26.0" prefWidth="238.0" promptText="Enter SQL input" />
+              <TableView fx:id="systemPersonsTableView" layoutY="86.0" prefHeight="458.0" prefWidth="574.0">
+                  <columns>
+                      <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="name" prefWidth="116.19999694824219" text="Name" />
+                      <TableColumn fx:id="surname" prefWidth="113.40000915527344" text="Surname" />
+                      <TableColumn fx:id="age" prefWidth="125.79998779296875" text="Age" />
+      
+                  </columns>
+              </TableView>
+              <Button fx:id="confirmButton" layoutX="273.0" layoutY="42.0" mnemonicParsing="false" onAction="#handleConfirmButton" text="Confirm" />
+            <Label layoutX="365.0" layoutY="7.0" prefHeight="26.0" prefWidth="122.0" text="As an input try:" />
+            <Label layoutX="365.0" layoutY="28.0" prefHeight="26.0" prefWidth="122.0" text="1' OR 1=1 --" />
+            <Label layoutX="365.0" layoutY="54.0" prefHeight="26.0" prefWidth="198.0" text="1'; DROP TABLE bds.injection --" />
+         </children>
+      </AnchorPane>
+    </children>
+</VBox>
